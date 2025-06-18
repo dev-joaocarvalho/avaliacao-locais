@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meu Perfil - LocalReview</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav class="navbar">
+        <a href="index.html" class="logo">
+          <i class="fas fa-map-marker-alt"></i>
+          <span>LocalReview</span>
+        </a>
+        <div class="nav-links">
+          <a href="index.html">Locais</a>
+          <a href="profile.html">Meu Perfil</a>
+          <div id="auth-buttons" style="display: none;">
+            <a href="login.html" class="btn btn-outline">Entrar</a>
+            <a href="register.html" class="btn btn-primary">Cadastrar</a>
+          </div>
+          <div id="user-menu">
+            <span id="username">Usuário</span>
+            <button class="btn btn-danger" onclick="logout()">Sair</button>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main-content">
+    <div class="container">
+      <div class="profile-header">
+        <div class="profile-avatar" id="profile-avatar">U</div>
+        <div class="profile-info">
+          <h2 id="profile-name">Usuário</h2>
+          <p class="profile-email" id="profile-email">usuario@exemplo.com</p>
+        </div>
+      </div>
+      
+      <h3 class="section-title">Minhas Avaliações</h3>
+      <div id="user-reviews">
+        <!-- Avaliações serão carregadas por JavaScript -->
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2023 LocalReview - Sistema de Avaliação de Locais</p>
+    </div>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
